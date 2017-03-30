@@ -1,0 +1,78 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "nodelessons1488@0.0.1",
+        "scope": null,
+        "escapedName": "nodelessons1488",
+        "name": "nodelessons1488",
+        "rawSpec": "0.0.1",
+        "spec": "0.0.1",
+        "type": "version"
+      },
+      "D:\\New folder"
+    ]
+  ],
+  "_from": "nodelessons1488@0.0.1",
+  "_id": "nodelessons1488@0.0.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/nodelessons1488",
+  "_nodeVersion": "7.7.4",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/nodelessons1488-0.0.1.tgz_1490881831411_0.3618088362272829"
+  },
+  "_npmUser": {
+    "name": "master_heo",
+    "email": "metalhrt7@gmail.com"
+  },
+  "_npmVersion": "4.1.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nodelessons1488@0.0.1",
+    "scope": null,
+    "escapedName": "nodelessons1488",
+    "name": "nodelessons1488",
+    "rawSpec": "0.0.1",
+    "spec": "0.0.1",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/nodelessons1488/-/nodelessons1488-0.0.1.tgz",
+  "_shasum": "d797eee6a0404344baa4957a619aa7376c136c6e",
+  "_shrinkwrap": null,
+  "_spec": "nodelessons1488@0.0.1",
+  "_where": "D:\\New folder",
+  "author": "",
+  "dependencies": {},
+  "description": "lessons",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "d797eee6a0404344baa4957a619aa7376c136c6e",
+    "tarball": "https://registry.npmjs.org/nodelessons1488/-/nodelessons1488-0.0.1.tgz"
+  },
+  "license": "ISC",
+  "main": "app.js",
+  "maintainers": [
+    {
+      "name": "master_heo",
+      "email": "metalhrt7@gmail.com"
+    },
+    {
+      "name": "eugenezoro",
+      "email": "evgeniykpi@gmail.com"
+    }
+  ],
+  "name": "nodelessons1488",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.2"
+}

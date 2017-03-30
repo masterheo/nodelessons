@@ -7,11 +7,11 @@ function User (name, car) {
 }
 
 User.prototype.hello = function(who) {
-	logger(db.getPhrase("Hello") + who.name);
+	logger(db.getPhrase("Hello") + who.name + ", есть тачка?");
 	who.move(this);
 }
 User.prototype.move = function(whom) {
-	logger("Есть ", db.getCar(this.car)," давай подвезу.");
+	logger(db.getPhrase("Hello") + whom.name + db.getCar(this.car),"давай подвезу.");
 }
 
 exports.User = User;

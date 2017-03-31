@@ -1,6 +1,7 @@
 var phrases;
 var cars;
 var house;
+var name;
 var logger = require("../logger")
 
 exports.connect = function()
@@ -8,6 +9,7 @@ exports.connect = function()
 	phrases=require("./ru");
 	cars=require("./cars");
 	house=require("./home");
+	name=require("./names");
 }
 exports.getPhrase = function (name) {
 	if (phrases[name]){
@@ -20,7 +22,7 @@ exports.getCar = function (car) {
 	if (cars[car]){
 		return cars[car];
 	}else{
-		logger("шол бы ты астедава, сцука");
+		return null;
 	}
 
 }
@@ -28,7 +30,7 @@ exports.getHome = function (home) {
 	if (house[home]){
 		return house[home];
 	} else {
-		logger("Временно бомж");
+		logger("Временно бомж.");
 		return null;
 	}
 	
@@ -36,7 +38,7 @@ exports.getHome = function (home) {
 
 exports.getRandCar = function (){
 	var keys = Object.keys(cars);
-	var rand = getRandomArbitary(0, keys.length-1);
+	var rand = getRandomArbitary(0, keys.length);
 	return keys[rand];
 }
 
@@ -44,6 +46,17 @@ exports.getRandHome = function (){
 	var keys = Object.keys(house);
 	var rand = getRandomArbitary(0, keys.length);
 	return keys[rand];
+}
+
+exports.getRandName = function (previousUser){
+	var keys = Object.keys(name);
+	var rand = getRandomArbitary(0, keys.length-1);
+	var randKey = keys[rand];
+	if (previousUser && name[randKey] == previousUser.name){
+		rand = getRandomArbitary(0, keys.length-1);
+		randKey = keys[rand];
+	}
+	return name[randKey];
 }
 
 function getRandomArbitary (min, max){

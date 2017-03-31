@@ -1,11 +1,13 @@
 var phrases;
 var cars;
+var house;
 var logger = require("../logger")
 
 exports.connect = function()
 {
 	phrases=require("./ru");
 	cars=require("./cars");
+	house=require("./home")
 }
 exports.getPhrase = function (name) {
 	if (phrases[name]){
@@ -20,4 +22,13 @@ exports.getCar = function (car) {
 	}else{
 		logger("шол бы ты астедава, сцука");
 	}
+
+}
+exports.getHome = function (home) {
+	if (house[home]){
+		return house[home];
+	}else{
+		logger("Временно бомж");
+	}
+	
 }

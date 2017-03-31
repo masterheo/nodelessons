@@ -14,7 +14,7 @@ User.prototype.hello = function(who) {
 
 User.prototype.move = function(whom) {
 	if (db.getCar(this.car)){
-		logger(db.getPhrase("Hello") + whom.name + db.getCar(this.car),"давай подвезу.");	
+		logger(db.getPhrase("Hello") + whom.name + db.getCar(this.car) + " давай подвезу.");	
 	} else {
 		logger(db.getPhrase("Hello") + whom.name + ". Ану песдуй атсюдава, сцука!!!!!11");
 	}
